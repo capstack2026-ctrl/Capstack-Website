@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" fill="none">
+  <title>Website architecture</title><desc>Responsive page structure with desktop and mobile component layers.</desc>
+  <rect width="760" height="520" fill="#F7F7F7"/><g stroke="#C0C0C0" stroke-width="1"><path d="M32 72H728M32 456H728" stroke-dasharray="3 7"/><path d="M60 34V484M700 34V484" stroke-dasharray="3 7"/></g>
+  <g fill="#FFF" stroke="#0A0A0A" stroke-width="1.5"><rect x="210" y="90" width="390" height="248" rx="3"/><rect x="88" y="176" width="120" height="226" rx="3"/></g>
+  <g stroke="#0A0A0A" stroke-width="1"><path d="M210 122h390M88 207h120"/><path d="M231 154h146v104H231zM397 154h181v42H397zM397 274h181v41H397zM109 237h78v48h-78zM109 300h78v77h-78z"/></g>
+  <g fill="#0A0A0A"><circle cx="225" cy="106" r="4"/><circle cx="239" cy="106" r="4"/><circle cx="253" cy="106" r="4"/><circle cx="102" cy="191" r="3"/></g>
+  <g fill="#5C5C5C" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.5"><text x="210" y="64">PERFORMANCE-FIRST BUILDS</text><text x="88" y="438">RESPONSIVE ON EVERY DEVICE</text><text x="455" y="370">CONVERSION-FOCUSED STRUCTURE</text></g>
+  <g stroke="#0A0A0A" stroke-width="1.5"><path d="M208 289H174V402"/><path d="M600 320h70v93"/><path d="M377 206h20"/></g><g fill="#0A0A0A"><circle cx="174" cy="402" r="4"/><circle cx="670" cy="413" r="4"/></g>
+  <g fill="#0A0A0A" font-family="Arial, sans-serif"><text x="42" y="122" font-size="11" letter-spacing="1.3">TECHNICAL SEO</text><text x="42" y="140" font-size="11">FOUNDATIONS</text><text x="615" y="438" font-size="11" letter-spacing="1.3">PERFORMANCE-FIRST</text><text x="615" y="456" font-size="11">BUILDS</text></g>
+</svg>

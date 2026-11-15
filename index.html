@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CAPSTACK is a software engineering company for startups and growing businesses." />
+    <title>CAPSTACK — Engineered before it’s built.</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="components/sections/hero.css" />
+    <link rel="stylesheet" href="components/sections/services.css" />
+    <link rel="stylesheet" href="components/sections/homepage-sections.css" />
+    <link rel="stylesheet" href="components/footer/footer.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="components/sections/homepage-refinement.css" />
+    <script type="module" src="scripts/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Homepage sections are added here only after approval. -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__frame">
+          <capstack-navbar></capstack-navbar>
+          <div class="hero__grid">
+            <div class="hero__content">
+              <p class="hero__eyebrow"><span>Software engineering</span><span>Built with intent</span></p>
+              <h1 id="hero-title"><span>Engineered</span><span>before it's</span><span>built.</span></h1>
+              <p class="hero__supporting-headline">Websites, SaaS products, automations and integrations, designed on sound architecture and built to scale.</p>
+              <p class="hero__description">CAPSTACK is a software engineering company for startups and growing businesses that want technology to hold up past launch day. Tell us what you need and we'll show you how we'd engineer it.</p>
+              <div class="hero__actions" id="start-project">
+                <a class="button button--primary" href="/contact/start-a-project">Start a Project</a>
+                <a class="button button--secondary" href="/services">Explore Services</a>
+              </div>
+            </div>
+            <div class="hero__visual" aria-label="Engineering decision map showing four technical disciplines forming a build-ready system">
+              <picture>
+                <source media="(max-width: 620px)" srcset="assets/svg/engineering-decision-map-mobile.svg" />
+                <img src="assets/svg/engineering-decision-map.svg" alt="Architecture, data model, security and performance connected through an engineering core into a build-ready system." />
+              </picture>
+            </div>
+          </div>
+          <div class="hero__capabilities" aria-label="CAPSTACK capabilities">
+            <a href="/services/website-development"><span class="hero__capability-icon hero__capability-icon--site" aria-hidden="true"></span><span><b>01 /</b> Website development</span></a>
+            <a href="/services/saas-product-development"><span class="hero__capability-icon hero__capability-icon--product" aria-hidden="true"></span><span><b>02 /</b> SaaS &amp; products</span></a>
+            <a href="/services/workflow-automation"><span class="hero__capability-icon hero__capability-icon--automation" aria-hidden="true"></span><span><b>03 /</b> Workflow automation</span></a>
+            <a href="/services/api-system-integrations"><span class="hero__capability-icon hero__capability-icon--api" aria-hidden="true"></span><span><b>04 /</b> API integrations</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="introduction" id="introduction" aria-labelledby="introduction-title">
+        <div class="section-heading"><p class="eyebrow">Introduction</p><h2 id="introduction-title">The expensive mistakes are made before development starts.</h2><p>Most rebuilds, delays and workarounds trace back to decisions nobody made early enough.</p></div>
+        <ol class="problem-list"><li><span>01</span><p><strong>Money spent twice.</strong> Features built without a plan get rebuilt.</p><img src="assets/svg/problem-money-spent-twice.svg" alt="" /></li><li><span>02</span><p><strong>Tools that don't talk.</strong> Teams re-enter the same data across disconnected systems.</p><img src="assets/svg/problem-disconnected-tools.svg" alt="" /></li><li><span>03</span><p><strong>Experiences that lose people.</strong> Slow pages, confusing flows and unclear next steps cost enquiries and customers.</p><img src="assets/svg/problem-losing-experiences.svg" alt="" /></li><li><span>04</span><p><strong>Limits hit too early.</strong> A foundation not built to grow forces a rebuild.</p><img src="assets/svg/problem-limits-hit-early.svg" alt="" /></li></ol>
+        <p class="section-closing">Each of these is decided early. That's where we start.</p>
+      </section>
+
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="services__intro">
+          <h2 id="services-title"><span>Four disciplines,</span><span>built around</span><span>outcomes.</span></h2>
+          <p>Start with one, or combine them. They're designed to fit together.</p>
+        </div>
+
+        <div class="services__list">
+          <article class="service service--website" data-index="01">
+            <div class="service__copy"><h3>Website Development</h3><p>A website that loads fast, ranks well and turns visitors into enquiries. Performance-first builds, technical SEO foundations and conversion-focused structure, responsive on every device.</p><a href="/services/website-development">Website Development</a></div>
+            <img class="service__diagram" src="assets/svg/service-website-architecture.svg" alt="Responsive website architecture with page and component layers." />
+          </article>
+
+          <article class="service service--product" data-index="02">
+            <div class="service__copy"><h3>SaaS &amp; Product Development</h3><p>A working product in your first users' hands, on a foundation that won't need rebuilding. MVP development with scalable architecture, sound database design, and authentication and security built in from the start.</p><a href="/services/saas-product-development">SaaS &amp; Product Development</a></div>
+            <img class="service__diagram" src="assets/svg/service-product-layers.svg" alt="Application architecture shown as connected product layers." />
+          </article>
+
+          <article class="service service--automation" data-index="03">
+            <div class="service__copy"><h3>Workflow Automation</h3><p>Fewer manual tasks, fewer errors and more time for work that matters. n8n automations from simple triggers to multi-step operations, including AI-assisted processes, designed to be monitored and maintained.</p><a href="/services/workflow-automation">Workflow Automation</a></div>
+            <img class="service__diagram" src="assets/svg/service-workflow-map.svg" alt="Monitored automation workflow connecting a trigger, logic, and action." />
+          </article>
+
+          <article class="service service--integrations" data-index="04">
+            <div class="service__copy"><h3>API &amp; System Integrations</h3><p>One connected system instead of a stack of disconnected tools. Reliable connections between CRMs, payment platforms, internal tools and third-party services, with sensible error handling and consistent data.</p><a href="/services/api-system-integrations">API &amp; System Integrations</a></div>
+            <img class="service__diagram" src="assets/svg/service-integration-exchange.svg" alt="Systems exchanging data through a reliable API connection." />
+          </article>
+        </div>
+        <a class="services__cta button button--secondary" href="/services">View All Services</a>
+      </section>
+
+      <!-- Hidden until CAPSTACK has verified, publishable work to show. -->
+      <section class="featured-work" id="work" aria-labelledby="work-title" hidden><div class="section-heading"><p class="eyebrow">Featured Work</p><h2 id="work-title">Work that shows how we think.</h2><p>Client projects, internal products and engineering experiments, each shown with the problem, the approach and what was built.</p></div><div class="work-types"><span>Client Project</span><span>Internal Product</span><span>Engineering Experiment</span></div><p class="pending-note">[PENDING: OWNER INPUT] No project entries are written. Supply any client projects, internal products or experiments cleared for publication (name, problem, services, what was built, any verifiable outcome) and this section will be populated. Until then, ship this section as a heading plus the three type labels, or hold it back.</p><a class="button button--secondary" href="/work">See Our Work</a></section>
+
+      <section class="engineering-approach" id="approach" aria-labelledby="approach-title">
+        <div class="approach-intro">
+          <div class="approach-copy">
+            <p class="eyebrow"><span>05 /</span> Engineering Approach</p>
+            <h2 id="approach-title">Four decisions that make software last.</h2>
+            <p>These are settled before development starts, because they're the hardest to change afterwards.</p>
+          </div>
+          <div class="approach-diagram" aria-hidden="true">
+            <div class="diagram-stack"><span class="stack-layer stack-layer--top">Product</span><span class="stack-layer stack-layer--two"></span><span class="stack-layer stack-layer--three"></span><span class="stack-layer stack-layer--base"></span></div>
+            <div class="diagram-callouts">
+              <span><i class="icon-cube"></i>Architecture</span><span><i class="icon-shield"></i>Security</span><span><i class="icon-bolt"></i>Performance</span><span><i class="icon-layers"></i>Simplicity</span>
+            </div>
+          </div>
+        </div>
+        <div class="decision-grid">
+          <article><div class="decision-card-top"><span>01</span><i class="icon-layers"></i></div><h3>Architecture<br />before code.</h3><p>We define the system structure, data model and integration points first, so growth doesn't mean rework.</p></article>
+          <article><div class="decision-card-top"><span>02</span><i class="icon-shield"></i></div><h3>Security<br />designed in.</h3><p>Authentication, data handling and input validation are planned from the first design stage, not added at the end.</p></article>
+          <article><div class="decision-card-top"><span>03</span><i class="icon-bolt"></i></div><h3>Performance<br />as a requirement.</h3><p>Speed and technical SEO are set as targets from the start, not tuned after launch.</p></article>
+          <article><div class="decision-card-top"><span>04</span><i class="icon-layers"></i></div><h3>The simplest<br />thing that works.</h3><p>Complexity has to earn its place. Fewer moving parts mean lower cost and easier maintenance.</p></article>
+        </div>
+        <a class="button button--primary" href="/process">See How We Work <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="why-capstack" aria-labelledby="why-title">
+        <div class="why-intro"><p class="eyebrow"><span>06 /</span> Why CAPSTACK</p><div><h2 id="why-title">Six reasons teams<br />choose CAPSTACK.</h2></div><p>An engineering-led partner for businesses that want reliable, scalable and long-term solutions.</p></div>
+        <div class="reason-grid">
+          <article class="reason-card reason-card--pricing"><div class="reason-card__top"><span>01</span><i></i></div><h3>Transparent,<br />competitive pricing.</h3><p>Scope is defined before work begins, so you know what you're paying for and why.</p><span class="reason-art" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><rect x="14" y="9" width="38" height="50" rx="4"/><path d="M22 23h22M22 33h22M22 43h14"/><circle cx="56" cy="57" r="12"/><path d="m50 57 4 4 8-9"/></svg></span></article>
+          <article class="reason-card reason-card--security"><div class="reason-card__top"><span>02</span><i></i></div><h3>Security-first<br />engineering.</h3><p>Security is part of the design, not a final checklist.</p><span class="reason-art" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><path d="M40 9 60 17v19c0 14-9 23-20 30-11-7-20-16-20-30V17l20-8Z"/><path d="m30 39 7 7 14-16"/></svg></span></article>
+          <article class="reason-card reason-card--performance"><div class="reason-card__top"><span>03</span><i></i></div><h3>Performance-first<br />development.</h3><p>Fast, responsive builds that support search visibility and keep visitors engaged.</p><span class="reason-art" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><rect x="10" y="16" width="60" height="44" rx="6"/><path d="M10 28h60M21 49a19 19 0 0 1 38 0M40 49l11-14"/></svg></span></article>
+          <article class="reason-card reason-card--custom"><div class="reason-card__top"><span>04</span><i></i></div><h3>Custom-built,<br />end to end.</h3><p>Designed and engineered for your business, not adapted from a generic template.</p><span class="reason-art" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><rect x="23" y="17" width="38" height="31" rx="4"/><rect x="14" y="26" width="38" height="31" rx="4"/><path d="m27 39 6 6 10-12"/></svg></span></article>
+          <article class="reason-card reason-card--code"><div class="reason-card__top"><span>05</span><i></i></div><h3>Future-ready,<br />maintainable code.</h3><p>Clean, structured code that your next developer can read and extend.</p><span class="reason-art" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><path d="m40 8 30 17v30L40 72 10 55V25L40 8Z"/><path d="m31 36-7 7 7 7M49 36l7 7-7 7M45 32 35 54"/></svg></span></article>
+          <article class="reason-card reason-card--support"><div class="reason-card__top"><span>06</span><i></i></div><h3>Ongoing<br />technical support.</h3><p>Launch isn't the finish line. Support and improvement continue afterwards.</p><span class="reason-art" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><path d="M21 43a19 19 0 0 1 38 0v10"/><rect x="15" y="50" width="12" height="21" rx="4"/><rect x="53" y="50" width="12" height="21" rx="4"/><path d="M27 67h7c5 0 8-3 8-8"/></svg></span></article>
+        </div>
+      </section>
+
+      <section class="development-process" id="process" aria-labelledby="process-title">
+        <div class="process-intro"><div><p class="eyebrow">Development Process</p><h2 id="process-title">You'll always know where your project stands.</h2><p>Five stages, a defined deliverable at each one, and a review point before we move on.</p></div><div class="process-timeline" aria-label="Development process: Discover, Architect, Build, Launch, Support"><span class="timeline-start">Your idea</span><span class="timeline-end">Your product</span><div class="timeline-line"><i></i><b>01<em>Discover</em></b><b>02<em>Architect</em></b><b>03<em>Build</em></b><b>04<em>Launch</em></b><b>05<em>Support</em></b><i></i></div></div></div>
+        <ol class="process-list">
+          <li class="process-step process-step--discover"><span>01</span><p><strong>Discover.</strong> We map your goals, users and constraints. You receive: a written scope summary.</p><div class="step-art" aria-hidden="true"><i></i><i></i><i></i><b>✓<br />✓<br />✓</b></div><small>Scope summary <b>→</b></small></li>
+          <li class="process-step process-step--architect"><span>02</span><p><strong>Architect.</strong> We design the system, choose the stack and set the security approach. You receive: an architecture overview and milestone plan.</p><div class="step-art" aria-hidden="true"><i></i><i></i><i></i><b>Architecture</b></div><small>Architecture plan <b>→</b></small></li>
+          <li class="process-step process-step--build"><span>03</span><p><strong>Build.</strong> Development in stages with regular updates. You receive: progress updates and working previews.</p><div class="step-art" aria-hidden="true"><i></i><b></b></div><small>Working previews <b>→</b></small></li>
+          <li class="process-step process-step--launch"><span>04</span><p><strong>Launch.</strong> Testing, optimization and deployment. You receive: a pre-launch checklist and your sign-off.</p><div class="step-art" aria-hidden="true"><i></i><b>✓</b></div><small>Launch checklist <b>→</b></small></li>
+          <li class="process-step process-step--support"><span>05</span><p><strong>Support.</strong> Maintenance and continued improvement after launch.</p><div class="step-art" aria-hidden="true"><i></i><b>●&nbsp; System healthy</b></div><small>Ongoing support <b>→</b></small></li>
+        </ol>
+        <a class="button button--secondary" href="/process">View the Full Process</a>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <div class="faq-layout">
+          <div class="faq-intro"><p class="eyebrow">FAQ</p><h2 id="faq-title">Questions worth asking before you commit.</h2><a href="/faq">All FAQs <span aria-hidden="true">→</span></a></div>
+          <div class="faq-list"><details><summary>What does CAPSTACK build?</summary><p>Websites, SaaS products (starting with MVPs), workflow automations using n8n, and API and system integrations. They can be commissioned separately or combined.</p></details><details><summary>Do I need a full specification before I get in touch?</summary><p>No. Tell us the problem and what you want to achieve. Defining the scope is the first stage of our process.</p></details><details><summary>How is a project priced?</summary><p>Every project is scoped before work begins, and the quote reflects that scope. Because projects vary widely, we don't publish fixed prices. Get in touch and we'll scope yours.</p></details><details><summary>Do you use templates?</summary><p>No. We build to your requirements, designed and engineered for your business rather than adapted from a generic template.</p></details><details><summary>Who owns the code?</summary><p>You do. You own the code we build for you. [TERMS PENDING: confirm ownership timing and any exceptions before publishing detail.]</p></details><details><summary>Do you support the project after launch?</summary><p>Yes. Support and maintenance are available after launch. [TERMS PENDING: scope, pricing and response times.]</p></details><details><summary>Can you work with the tools we already use?</summary><p>Often, yes. Integrations are part of what we do, and we assess how your current tools can be connected during the discovery stage.</p></details><details><summary>Can we start small with an MVP?</summary><p>Yes. For product work we begin with an MVP, built on a foundation designed to grow so it doesn't need rebuilding later.</p></details><details><summary>How long will my project take?</summary><p>It depends on scope. We give a timeline once the scope is defined, rather than promising one up front.</p></details><details><summary>Where is CAPSTACK based, and who do you work with?</summary><p>We're based in Chennai, India, and work with clients in India and worldwide.</p></details><a class="faq-contact" href="/contact/start-a-project">Still deciding? Start a conversation <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="start-project" aria-labelledby="final-cta-title"><p class="eyebrow">Start a Project</p><h2 id="final-cta-title">Tell us what you're building.</h2><p>Share the idea, the problem or the system that isn't working. We'll show you how we'd engineer it.</p><a class="button button--primary" href="/contact/start-a-project">Start a Project</a><small>No complete specification required to get started.</small></section>
+    </main>
+    <capstack-footer></capstack-footer>
+  </body>
+</html>

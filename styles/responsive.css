@@ -1,0 +1,52 @@
+@media (max-width: 960px) {
+  .hero { padding: 12px; }
+  .hero__frame { min-height: calc(100svh - 24px); }
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__content { min-height: 480px; padding: 74px 48px 62px; }
+  .hero__content::after { bottom: 28px; left: 48px; }
+  .hero__visual { min-height: 470px; border-top: 1px solid #e5e5e5; border-left: 0; }
+  .hero__capabilities { grid-template-columns: repeat(2,1fr); }
+  .hero__capabilities a:nth-child(2) { border-right: 0; }
+  .hero__capabilities a:nth-child(-n+2) { border-bottom: 1px solid #d8d8d8; }
+}
+
+@media (min-width: 621px) and (max-width: 1023px) {
+  .hero { padding: 16px; }
+  .hero__frame { min-height: calc(100svh - 32px); }
+  .hero__content { min-height: 500px; padding: 72px 40px 62px; }
+  .hero__content::after { bottom: 28px; left: 40px; }
+  .hero__visual { min-height: 450px; }
+  .hero h1 { font-size: clamp(58px, 7.4vw, 72px); }
+}
+
+@media (max-width: 620px) {
+  .hero { padding: 0; }
+  .hero__frame { min-height: 100svh; border: 0; border-radius: 0; }
+  .hero__content { min-height: auto; padding: 62px 20px 52px; }
+  .hero__content::after { bottom: 24px; left: 20px; width: 40px; }
+  .eyebrow { margin-bottom: 21px; font-size: 10px; }
+  .hero__eyebrow { margin-bottom: 24px; font-size: 9px; }
+  .hero h1 { font-size: clamp(46px, 13.2vw, 56px); letter-spacing: -.078em; line-height: .87; }
+  .hero__supporting-headline { margin-top: 30px; font-size: 17px; line-height: 1.48; }
+  .hero__description { margin-top: 18px; font-size: 15px; }
+  .hero__actions { display: grid; grid-template-columns: 1fr; margin-top: 32px; }
+  .button { width: 100%; }
+  .hero__visual { min-height: 360px; }
+  .hero__visual::before { inset: 12px; }
+  .hero__visual img { padding: 14px; }
+  .hero__capabilities a { min-height: 62px; gap: 9px; padding: 10px 9px; font-size: 11px; }
+  .hero__capabilities b { display: block; margin: 0 0 3px; font-size: 8px; }
+  .hero__capability-icon { transform: scale(.82); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
+
+/* The hero is a full-bleed section too; only its internal content uses the rail. */
+@media (min-width: 621px) and (max-width: 1023px) {
+  .hero { padding: 0; }
+  .hero__frame { min-height: 100svh; }
+  .hero__content { padding-right: var(--section-x); padding-left: var(--section-x); }
+  .hero__content::after { left: var(--section-x); }
+}

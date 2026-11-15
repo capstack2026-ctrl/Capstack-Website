@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" fill="none">
+  <title>Product architecture</title><desc>Layered application architecture for a SaaS product.</desc>
+  <rect width="600" height="520" fill="#0A0A0A"/><g stroke="#3A3A3A" stroke-width="1"><path d="M48 68H552M48 452H552" stroke-dasharray="3 7"/></g>
+  <g fill="#0A0A0A" stroke="#FFF" stroke-width="1.25"><path d="m152 130 144-52 156 56-147 59-153-63Z"/><path d="m152 130 153 63v61l-153-63v-61Z"/><path d="m305 193 147-59v61l-147 59v-61Z"/><path d="m152 260 153 63 147-59v65l-147 59-153-63v-65Z"/><path d="m152 352 153 63 147-59v65l-147 59-153-63v-65Z"/></g>
+  <g fill="#FFF" font-family="Arial, sans-serif"><text x="264" y="140" font-size="12" letter-spacing="1.5">MVP DEVELOPMENT</text><text x="252" y="292" font-size="12" letter-spacing="1.5">SCALABLE ARCHITECTURE</text><text x="252" y="384" font-size="12" letter-spacing="1.5">DATABASE DESIGN</text><text x="48" y="42" font-size="10" letter-spacing="1.8">MVP DEVELOPMENT</text><text x="48" y="478" font-size="10" letter-spacing="1.4">BUILT IN FROM THE START</text></g>
+  <g stroke="#FFF" stroke-width="1"><path d="M470 134h61M470 264h61M470 356h61"/></g><g fill="#FFF" font-family="Arial, sans-serif" font-size="10"><text x="478" y="122">MVP</text><text x="478" y="252">ARCHITECTURE</text><text x="478" y="344">AUTHENTICATION AND SECURITY</text></g>
+</svg>

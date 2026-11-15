@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" fill="none">
+  <title>Workflow automation</title><desc>Trigger, logic and action nodes connected in a monitored workflow.</desc>
+  <rect width="760" height="520" fill="#F7F7F7"/><g stroke="#C0C0C0" stroke-width="1"><path d="M38 70H722M38 452H722" stroke-dasharray="3 7"/></g>
+  <g fill="#FFF" stroke="#0A0A0A" stroke-width="1.5"><rect x="72" y="226" width="150" height="72" rx="36"/><rect x="310" y="164" width="150" height="72" rx="3"/><rect x="310" y="288" width="150" height="72" rx="3"/><rect x="548" y="226" width="140" height="72" rx="36"/></g>
+  <g stroke="#0A0A0A" stroke-width="1.5"><path d="M222 262h54v-62h34M222 262h54v62h34M460 200h52v62h36M460 324h52v-62"/></g><g fill="#0A0A0A"><circle cx="276" cy="262" r="4"/><circle cx="512" cy="262" r="4"/></g>
+  <g fill="#0A0A0A" font-family="Arial, sans-serif" text-anchor="middle"><text x="147" y="255" font-size="10" letter-spacing="1.6">SIMPLE TRIGGERS</text><text x="147" y="274" font-size="13">n8n automations</text><text x="385" y="194" font-size="10" letter-spacing="1.4">MULTI-STEP</text><text x="385" y="214" font-size="13">operations</text><text x="385" y="318" font-size="10" letter-spacing="1.4">AI-ASSISTED</text><text x="385" y="338" font-size="13">processes</text><text x="618" y="255" font-size="10" letter-spacing="1.6">MONITORED</text><text x="618" y="274" font-size="13">and maintained</text></g>
+  <g fill="#5C5C5C" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.5"><text x="72" y="110">N8N AUTOMATIONS</text><text x="510" y="410">MULTI-STEP OPERATIONS</text></g><g stroke="#0A0A0A" stroke-width="1"><path d="M510 384h148M510 388v-8M658 388v-8"/></g>
+</svg>

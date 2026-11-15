@@ -1,0 +1,6 @@
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 0 24px; border: 1px solid transparent; border-radius: var(--radius-control); font-family: var(--font-body); font-size: 14px; font-weight: 600; line-height: 1; transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast); }
+.button:hover { transform: translateY(-1px); }
+.button:active { transform: translateY(0); }
+.button:focus-visible,.faq summary:focus-visible,.service__copy a:focus-visible,.faq-intro a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.button--primary { background: var(--color-ink); color: var(--color-surface); }
+.button--secondary { border-color: var(--color-border); background: var(--color-surface); }

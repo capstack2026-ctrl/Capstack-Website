@@ -1,0 +1,9 @@
+{
+  "name": "capstack-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CAPSTACK static website source",
+  "scripts": {
+    "check": "node --check scripts/main.js && node --check scripts/animations.js && node --check scripts/interactions.js && node --check scripts/services.js && node --check components/navbar/navbar.js && node --check components/footer/footer.js"
+  }
+}
