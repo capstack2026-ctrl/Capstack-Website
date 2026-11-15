@@ -2,7 +2,7 @@ class CapstackNavbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <header class="site-navbar" aria-label="Primary navigation"><div class="site-navbar__inner">
-        <a class="brand" href="/" aria-label="CAPSTACK home"><img class="brand__mark" src="/assets/images/capstack-logo.png" alt="" /><span>CAPSTACK</span></a>
+        <a class="brand" href="/" aria-label="CAPSTACK home"><img class="brand__mark" src="/Capstack_logo.png" alt="" /><span>CAPSTACK</span></a>
         <nav class="navigation" aria-label="Main menu">
           <details class="nav-services" data-nav-dropdown>
             <summary class="nav-trigger" aria-controls="services-menu" aria-expanded="false">Services</summary>

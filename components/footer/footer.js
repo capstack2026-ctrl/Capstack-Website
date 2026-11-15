@@ -4,7 +4,7 @@ class CapstackFooter extends HTMLElement {
       <footer class="site-footer">
         <div class="site-footer__content">
           <section class="site-footer__brand" aria-label="CAPSTACK">
-            <a class="site-footer__logo" href="/" aria-label="CAPSTACK home"><img src="/assets/images/capstack-logo.png" alt="" /><span>CAPSTACK</span></a>
+            <a class="site-footer__logo" href="/" aria-label="CAPSTACK home"><img src="/Capstack_logo.png" alt="" /><span>CAPSTACK</span></a>
             <p>Software engineering for startups<br />and growing businesses.</p>
             <nav class="site-footer__social" aria-label="Social media">
               <a href="https://www.linkedin.com" aria-label="CAPSTACK on LinkedIn" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.2 8.3A2.1 2.1 0 1 0 6.2 4a2.1 2.1 0 0 0 0 4.3ZM4.4 20h3.7V9.8H4.4V20Zm6.1 0h3.7v-5c0-1.3.3-2.6 1.9-2.6s1.6 1.6 1.6 2.7V20h3.7v-5.6c0-3.4-.7-6-4.7-6-1.9 0-3.2 1-3.7 2.1h-.1V9.8h-3.5V20Z" /></svg></a>
