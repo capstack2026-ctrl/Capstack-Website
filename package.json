@@ -4,6 +4,7 @@
   "private": true,
   "description": "CAPSTACK static website source",
   "scripts": {
-    "check": "node --check scripts/main.js && node --check scripts/animations.js && node --check scripts/interactions.js && node --check scripts/services.js && node --check components/navbar/navbar.js && node --check components/footer/footer.js"
+    "start": "node scripts/static-server.js",
+    "check": "node --check scripts/main.js && node --check scripts/animations.js && node --check scripts/interactions.js && node --check scripts/services.js && node --check scripts/faq.js && node --check scripts/process.js && node --check scripts/static-server.js && node --check components/navbar/navbar.js && node --check components/footer/footer.js"
   }
 }

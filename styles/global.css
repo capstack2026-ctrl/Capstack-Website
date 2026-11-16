@@ -17,3 +17,25 @@ a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 button, a, summary { -webkit-tap-highlight-color: transparent; }
 :focus-visible { outline: 2px solid var(--color-ink); outline-offset: 3px; }
+.section--chamfer-all,
+.why-capstack,
+.process-stages,
+.process-contrast,
+.startup-approach,
+.startup-why,
+.gb-software,
+.product-principles,
+.product-why,
+.workflow-approach,
+.workflow-why {
+  --section-chamfer: 28px;
+  position: relative;
+  z-index: 1;
+  margin-block: calc(var(--section-chamfer) * -1);
+  padding-block: calc(var(--section-y) + var(--section-chamfer));
+  clip-path: polygon(var(--section-chamfer) 0, calc(100% - var(--section-chamfer)) 0, 100% var(--section-chamfer), 100% calc(100% - var(--section-chamfer)), calc(100% - var(--section-chamfer)) 100%, var(--section-chamfer) 100%, 0 calc(100% - var(--section-chamfer)), 0 var(--section-chamfer));
+}
+@media (min-width: 761px) and (max-width: 1023px) { .section--chamfer-all, .why-capstack, .process-stages, .process-contrast, .startup-approach, .startup-why, .gb-software, .product-principles, .product-why, .workflow-approach, .workflow-why { --section-chamfer: 20px; } }
+@media (max-width: 760px) { .section--chamfer-all, .why-capstack, .process-stages, .process-contrast, .startup-approach, .startup-why, .gb-software, .product-principles, .product-why, .workflow-approach, .workflow-why { --section-chamfer: 14px; } }
+::selection { background-color: #0A0A0A; color: #FFFFFF; }
+::-moz-selection { background-color: #0A0A0A; color: #FFFFFF; }

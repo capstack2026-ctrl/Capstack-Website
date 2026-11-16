@@ -21,12 +21,47 @@ class CapstackNavbar extends HTMLElement {
         <nav class="mobile-navigation" id="mobile-navigation" aria-label="Mobile navigation" hidden><details data-nav-dropdown><summary>Services</summary><a href="/services/website-development">Website Development</a><a href="/services/saas-product-development">SaaS &amp; Product Development</a><a href="/services/workflow-automation">Workflow Automation</a><a href="/services/api-system-integrations">API &amp; System Integrations</a></details><details data-nav-dropdown><summary>Solutions</summary><a href="/solutions/startups"><i class="solution-icon solution-icon--startup" aria-hidden="true"></i>For Startups</a><a href="/solutions/growing-businesses"><i class="solution-icon solution-icon--growing" aria-hidden="true"></i>For Growing Businesses</a></details><a href="/work">Work</a><a href="/process">Process</a><a href="/about">About</a><a href="/faq">FAQ</a></nav>
       </div></header>`;
 
+    const iconMarkup = {
+      website: '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="24" height="20" rx="2"/><path d="M4 12h24M9 9h.1M12 9h.1M9 17h6M9 21h11"/></svg>',
+      product: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="m16 4 10 6-10 6L6 10l10-6Z"/><path d="m6 16 10 6 10-6M6 22l10 6 10-6"/></svg>',
+      automation: '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="7" cy="8" r="3"/><circle cx="25" cy="16" r="3"/><circle cx="7" cy="24" r="3"/><path d="M10 8h5a5 5 0 0 1 5 5v3h2M10 24h5a5 5 0 0 0 5-5v-3h2"/></svg>',
+      integration: '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="7" cy="16" r="3"/><circle cx="25" cy="8" r="3"/><circle cx="25" cy="24" r="3"/><path d="M10 16h6m2-5 4-2m-4 11 4 2"/></svg>',
+      startup: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5c5 3 8 7 8 13l-4-1-4 5-4-5-4 1c0-6 3-10 8-13Z"/><path d="m12 22-2 5m10-5 2 5M16 11v4"/></svg>',
+      growing: '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 25V7m0 18h22M10 20l5-5 4 3 8-9"/><path d="M22 9h5v5"/></svg>'
+    };
+    this.querySelectorAll('.menu-icon').forEach((icon) => {
+      const name = [...icon.classList].find((className) => className.startsWith('menu-icon--'))?.replace('menu-icon--', '');
+      icon.innerHTML = iconMarkup[name] || '';
+    });
+    this.querySelectorAll('.solution-icon').forEach((icon) => {
+      const name = [...icon.classList].find((className) => className.startsWith('solution-icon--'))?.replace('solution-icon--', '');
+      icon.innerHTML = iconMarkup[name] || '';
+    });
+
     const dropdowns = [...this.querySelectorAll('[data-nav-dropdown]')];
     const services = this.querySelector('.nav-services');
     const mobileToggle = this.querySelector('.mobile-menu-toggle');
     const mobileNavigation = this.querySelector('.mobile-navigation');
     let closeTimer;
     let pinnedDropdown = null;
+    const navbarSurface = this.querySelector('.site-navbar');
+    let isCompact = false;
+    let scrollFrame = null;
+    const syncScrollState = () => {
+      scrollFrame = null;
+      const y = window.scrollY;
+      // Separate enter and exit thresholds prevent a scroll pause near the
+      // boundary from repeatedly reversing the transition.
+      const nextCompact = isCompact ? y > 8 : y > 28;
+      if (nextCompact === isCompact) return;
+      isCompact = nextCompact;
+      navbarSurface.classList.toggle('is-scrolled', isCompact);
+    };
+    this.handleScroll = () => {
+      if (scrollFrame === null) scrollFrame = window.requestAnimationFrame(syncScrollState);
+    };
+    syncScrollState();
+    window.addEventListener('scroll', this.handleScroll, { passive: true });
 
     const isDesktop = () => window.matchMedia('(min-width: 1141px)').matches;
     const syncExpanded = (dropdown) => {
@@ -106,6 +141,7 @@ class CapstackNavbar extends HTMLElement {
 
   disconnectedCallback() {
     document.removeEventListener('pointerdown', this.handleOutsidePointer);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 

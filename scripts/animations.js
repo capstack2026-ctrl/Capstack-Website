@@ -1,4 +1,21 @@
 export function initializeAnimations() {
+  const growingRevealElements = document.querySelectorAll(".gb-reveal");
+  if (growingRevealElements.length) {
+    const revealGrowingElement = (element) => element.classList.add("is-visible");
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      growingRevealElements.forEach(revealGrowingElement);
+    } else {
+      const growingObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            revealGrowingElement(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      growingRevealElements.forEach((element) => growingObserver.observe(element));
+    }
+  }
   const startupRevealElements = document.querySelectorAll(".startup-reveal");
   if (startupRevealElements.length) {
     const revealStartupElement = (element) => element.classList.add("is-visible");

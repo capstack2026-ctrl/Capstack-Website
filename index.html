@@ -39,16 +39,10 @@
               </picture>
             </div>
           </div>
-          <div class="hero__capabilities" aria-label="CAPSTACK capabilities">
-            <a href="/services/website-development"><span class="hero__capability-icon hero__capability-icon--site" aria-hidden="true"></span><span><b>01 /</b> Website development</span></a>
-            <a href="/services/saas-product-development"><span class="hero__capability-icon hero__capability-icon--product" aria-hidden="true"></span><span><b>02 /</b> SaaS &amp; products</span></a>
-            <a href="/services/workflow-automation"><span class="hero__capability-icon hero__capability-icon--automation" aria-hidden="true"></span><span><b>03 /</b> Workflow automation</span></a>
-            <a href="/services/api-system-integrations"><span class="hero__capability-icon hero__capability-icon--api" aria-hidden="true"></span><span><b>04 /</b> API integrations</span></a>
-          </div>
         </div>
       </section>
 
-      <section class="introduction" id="introduction" aria-labelledby="introduction-title">
+      <section class="introduction section--chamfer-all" id="introduction" aria-labelledby="introduction-title">
         <div class="section-heading"><p class="eyebrow">Introduction</p><h2 id="introduction-title">The expensive mistakes are made before development starts.</h2><p>Most rebuilds, delays and workarounds trace back to decisions nobody made early enough.</p></div>
         <ol class="problem-list"><li><span>01</span><p><strong>Money spent twice.</strong> Features built without a plan get rebuilt.</p><img src="assets/svg/problem-money-spent-twice.svg" alt="" /></li><li><span>02</span><p><strong>Tools that don't talk.</strong> Teams re-enter the same data across disconnected systems.</p><img src="assets/svg/problem-disconnected-tools.svg" alt="" /></li><li><span>03</span><p><strong>Experiences that lose people.</strong> Slow pages, confusing flows and unclear next steps cost enquiries and customers.</p><img src="assets/svg/problem-losing-experiences.svg" alt="" /></li><li><span>04</span><p><strong>Limits hit too early.</strong> A foundation not built to grow forces a rebuild.</p><img src="assets/svg/problem-limits-hit-early.svg" alt="" /></li></ol>
         <p class="section-closing">Each of these is decided early. That's where we start.</p>
@@ -95,22 +89,22 @@
             <p>These are settled before development starts, because they're the hardest to change afterwards.</p>
           </div>
           <div class="approach-diagram" aria-hidden="true">
-            <div class="diagram-stack"><span class="stack-layer stack-layer--top">Product</span><span class="stack-layer stack-layer--two"></span><span class="stack-layer stack-layer--three"></span><span class="stack-layer stack-layer--base"></span></div>
+            <div class="diagram-stack"><span class="stack-layer stack-layer--top" data-layer="architecture">Product</span><span class="stack-layer stack-layer--two" data-layer="security"></span><span class="stack-layer stack-layer--three" data-layer="performance"></span><span class="stack-layer stack-layer--base" data-layer="simplicity"></span></div>
             <div class="diagram-callouts">
-              <span><i class="icon-cube"></i>Architecture</span><span><i class="icon-shield"></i>Security</span><span><i class="icon-bolt"></i>Performance</span><span><i class="icon-layers"></i>Simplicity</span>
+              <span data-decision="architecture"><i class="icon-cube"></i>Architecture</span><span data-decision="security"><i class="icon-shield"></i>Security</span><span data-decision="performance"><i class="icon-bolt"></i>Performance</span><span data-decision="simplicity"><i class="icon-layers"></i>Simplicity</span>
             </div>
           </div>
         </div>
         <div class="decision-grid">
-          <article><div class="decision-card-top"><span>01</span><i class="icon-layers"></i></div><h3>Architecture<br />before code.</h3><p>We define the system structure, data model and integration points first, so growth doesn't mean rework.</p></article>
-          <article><div class="decision-card-top"><span>02</span><i class="icon-shield"></i></div><h3>Security<br />designed in.</h3><p>Authentication, data handling and input validation are planned from the first design stage, not added at the end.</p></article>
-          <article><div class="decision-card-top"><span>03</span><i class="icon-bolt"></i></div><h3>Performance<br />as a requirement.</h3><p>Speed and technical SEO are set as targets from the start, not tuned after launch.</p></article>
-          <article><div class="decision-card-top"><span>04</span><i class="icon-layers"></i></div><h3>The simplest<br />thing that works.</h3><p>Complexity has to earn its place. Fewer moving parts mean lower cost and easier maintenance.</p></article>
+          <article data-decision="architecture" tabindex="0" role="button" aria-pressed="false"><div class="decision-card-top"><span>01</span><i class="icon-layers"></i></div><h3>Architecture<br />before code.</h3><p>We define the system structure, data model and integration points first, so growth doesn't mean rework.</p></article>
+          <article data-decision="security" tabindex="0" role="button" aria-pressed="false"><div class="decision-card-top"><span>02</span><i class="icon-shield"></i></div><h3>Security<br />designed in.</h3><p>Authentication, data handling and input validation are planned from the first design stage, not added at the end.</p></article>
+          <article data-decision="performance" tabindex="0" role="button" aria-pressed="false"><div class="decision-card-top"><span>03</span><i class="icon-bolt"></i></div><h3>Performance<br />as a requirement.</h3><p>Speed and technical SEO are set as targets from the start, not tuned after launch.</p></article>
+          <article data-decision="simplicity" tabindex="0" role="button" aria-pressed="false"><div class="decision-card-top"><span>04</span><i class="icon-layers"></i></div><h3>The simplest<br />thing that works.</h3><p>Complexity has to earn its place. Fewer moving parts mean lower cost and easier maintenance.</p></article>
         </div>
         <a class="button button--primary" href="/process">See How We Work <span aria-hidden="true">↗</span></a>
       </section>
 
-      <section class="why-capstack" aria-labelledby="why-title">
+      <section class="why-capstack section--chamfer-all" aria-labelledby="why-title">
         <div class="why-intro"><p class="eyebrow"><span>06 /</span> Why CAPSTACK</p><div><h2 id="why-title">Six reasons teams<br />choose CAPSTACK.</h2></div><p>An engineering-led partner for businesses that want reliable, scalable and long-term solutions.</p></div>
         <div class="reason-grid">
           <article class="reason-card reason-card--pricing"><div class="reason-card__top"><span>01</span><i></i></div><h3>Transparent,<br />competitive pricing.</h3><p>Scope is defined before work begins, so you know what you're paying for and why.</p><span class="reason-art" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><rect x="14" y="9" width="38" height="50" rx="4"/><path d="M22 23h22M22 33h22M22 43h14"/><circle cx="56" cy="57" r="12"/><path d="m50 57 4 4 8-9"/></svg></span></article>
