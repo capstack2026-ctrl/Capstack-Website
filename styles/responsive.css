@@ -4,7 +4,6 @@
   .hero__grid { grid-template-columns: 1fr; }
   .hero__content { min-height: 480px; padding: 74px 48px 62px; }
   .hero__content::after { bottom: 28px; left: 48px; }
-  .hero__visual { min-height: 470px; border-top: 1px solid #e5e5e5; border-left: 0; }
   .hero__capabilities { grid-template-columns: repeat(2,1fr); }
   .hero__capabilities a:nth-child(2) { border-right: 0; }
   .hero__capabilities a:nth-child(-n+2) { border-bottom: 1px solid #d8d8d8; }
@@ -15,7 +14,6 @@
   .hero__frame { min-height: calc(100svh - 32px); }
   .hero__content { min-height: 500px; padding: 72px 40px 62px; }
   .hero__content::after { bottom: 28px; left: 40px; }
-  .hero__visual { min-height: 450px; }
   .hero h1 { font-size: clamp(58px, 7.4vw, 72px); }
 }
 
@@ -31,9 +29,6 @@
   .hero__description { margin-top: 18px; font-size: 15px; }
   .hero__actions { display: grid; grid-template-columns: 1fr; margin-top: 32px; }
   .button { width: 100%; }
-  .hero__visual { min-height: 360px; }
-  .hero__visual::before { inset: 12px; }
-  .hero__visual img { padding: 14px; }
   .hero__capabilities a { min-height: 62px; gap: 9px; padding: 10px 9px; font-size: 11px; }
   .hero__capabilities b { display: block; margin: 0 0 3px; font-size: 8px; }
   .hero__capability-icon { transform: scale(.82); }

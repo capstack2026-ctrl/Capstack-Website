@@ -25,20 +25,6 @@
   line-height: 1.7;
 }
 
-.hero__visual::before {
-  inset: 14px;
-  border-color: var(--border-strong, #d0d0d0);
-}
-
-.hero__visual picture {
-  width: min(100%, 920px);
-}
-
-.hero__visual img {
-  padding: clamp(18px, 2.2vw, 38px);
-  filter: grayscale(1) contrast(1.12) brightness(.99);
-}
-
 /* Services */
 .services__list {
   gap: 18px;
@@ -269,18 +255,9 @@
    principle, and the process timeline reveals its connective logic once. */
 .engineering-approach .decision-grid [data-decision]{cursor:pointer;transition:border-color .2s ease,background-color .2s ease,color .2s ease}.engineering-approach .decision-grid [data-decision]:focus-visible{outline:2px solid #111;outline-offset:3px}.engineering-approach[data-active-decision] .stack-layer,.engineering-approach[data-active-decision] .diagram-callouts span{opacity:.25}.engineering-approach[data-active-decision] .stack-layer,.engineering-approach[data-active-decision] .diagram-callouts span{transition:opacity .22s ease,background-color .22s ease,color .22s ease,box-shadow .22s ease}.engineering-approach[data-active-decision="architecture"] [data-layer="architecture"],.engineering-approach[data-active-decision="security"] [data-layer="security"],.engineering-approach[data-active-decision="performance"] [data-layer="performance"],.engineering-approach[data-active-decision="simplicity"] [data-layer="simplicity"],.engineering-approach[data-active-decision="architecture"] .diagram-callouts [data-decision="architecture"],.engineering-approach[data-active-decision="security"] .diagram-callouts [data-decision="security"],.engineering-approach[data-active-decision="performance"] .diagram-callouts [data-decision="performance"],.engineering-approach[data-active-decision="simplicity"] .diagram-callouts [data-decision="simplicity"]{opacity:1;background:#111;color:#fff;box-shadow:0 6px 14px rgba(0,0,0,.1)}.engineering-approach[data-active-decision] .decision-grid [data-decision]{opacity:.55}.engineering-approach[data-active-decision="architecture"] .decision-grid [data-decision="architecture"],.engineering-approach[data-active-decision="security"] .decision-grid [data-decision="security"],.engineering-approach[data-active-decision="performance"] .decision-grid [data-decision="performance"],.engineering-approach[data-active-decision="simplicity"] .decision-grid [data-decision="simplicity"]{opacity:1;border-color:#111;background:#f2f2f2}.development-process .timeline-line::before{transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.22,1,.36,1)}.development-process .process-intro.is-visible .timeline-line::before{transform:scaleX(1)}.development-process .timeline-line b{opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease}.development-process .process-intro.is-visible .timeline-line b{opacity:1;transform:none}.development-process .process-intro.is-visible .timeline-line b:nth-of-type(1){transition-delay:.12s}.development-process .process-intro.is-visible .timeline-line b:nth-of-type(2){transition-delay:.2s}.development-process .process-intro.is-visible .timeline-line b:nth-of-type(3){transition-delay:.28s}.development-process .process-intro.is-visible .timeline-line b:nth-of-type(4){transition-delay:.36s}.development-process .process-intro.is-visible .timeline-line b:nth-of-type(5){transition-delay:.44s}.faq-list{counter-reset:homepage-faq}.faq-list>details{counter-increment:homepage-faq}.faq-list>details>summary{display:grid;grid-template-columns:42px 1fr 34px;align-items:center;gap:12px}.faq-list>details>summary::before{color:#777;font:10px var(--font-mono);letter-spacing:.06em;content:counter(homepage-faq,decimal-leading-zero)}.final-cta{position:relative;overflow:hidden}.final-cta::before{position:absolute;inset:22px;border:1px solid #353536;content:"";pointer-events:none}.final-cta h2{position:relative;font-size:clamp(54px,6vw,88px);line-height:.9}.final-cta .button{position:relative}@media(prefers-reduced-motion:reduce){.development-process .timeline-line::before,.development-process .timeline-line b{opacity:1;transform:none;transition:none}.engineering-approach[data-active-decision] .stack-layer,.engineering-approach[data-active-decision] .diagram-callouts span{transition:none}}
 
-@media (max-width: 540px) {
-  .hero__visual img {
-    padding: 14px;
-  }
-
-  .site-footer__architecture {
-    height: 138px;
-  }
-}
+@media (max-width: 540px) { .site-footer__architecture { height: 138px; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero__visual img,
   .site-footer__architecture img {
     transition: none;
   }
